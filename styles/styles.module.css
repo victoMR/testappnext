@@ -1,0 +1,138 @@
+.container {
+  padding-top: 56px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #343a40;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarBrand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.navbarBrand:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.navbarBrand span {
+  color: #007bff;
+}
+.navbarNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.navbarNav li {
+  padding: 0 10px;
+}
+.navbarNav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbarNav li a:hover {
+  color: #b0ff74;
+  text-decoration: none;
+}
+.navbarItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarItem a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbarLink {
+  color: #fff;
+  text-decoration: none;
+}
+.navbarLink:hover {
+  color: #313131;
+  text-decoration: none;
+}
+.content {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.imageContainer {
+  align-content: center;
+  display: flex;
+  margin: 3%;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 0 10px;
+  left: 22%;
+  position: relative;
+  margin: 20px;
+}
+@keyframes breath {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Apply the breathing effect to the 'name' element */
+.name:hover {
+  animation: breath 2s infinite;
+  color: #b0ff74;
+}
+
+.containerHelp {
+  max-width: 400px;
+  margin-top: 10%;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #2c1818;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: borderAnimationLinear 5s infinite linear;
+}
+
+@keyframes borderAnimationLinear {
+  0% {
+    border-color: #2c1818;
+  }
+  50% {
+    border-color: #4f1111;
+  }
+  100% {
+    border-color: #2c1818;
+  }
+}

@@ -1,0 +1,29 @@
+/* styles.module.css */
+
+.container {
+  max-width: 800px;
+  margin-top: 50%;
+  padding: 20px;
+  display: flex;
+  /* Add this property to enable flex layout */
+  flex-direction: column;
+  /* Add this property to set the flex direction to column */
+  align-items: center;
+  /* Add this property to center align the content horizontally */
+  justify-content: center;
+  /* Add this property to center align the content vertically */
+  position: fixed !important;
+
+}
+
+.pageTitle {
+  margin-top: 50%;
+  text-align: center;
+  color: #a8a0a0;
+}
+
+.pageDescription {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
